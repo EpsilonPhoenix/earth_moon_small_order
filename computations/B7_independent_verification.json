@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "counts_by_complement_edges": [
+    1,
+    2,
+    5,
+    10,
+    21,
+    41
+  ],
+  "num_bases": 80,
+  "all_SAT_bases_covered": true,
+  "seconds": 0.30560755729675293
+}

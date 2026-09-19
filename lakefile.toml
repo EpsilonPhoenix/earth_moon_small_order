@@ -1,0 +1,6 @@
+name = "earth_moon_small_order"
+version = "0.1.0"
+defaultTargets = ["SmallOrder"]
+
+[[lean_lib]]
+name = "SmallOrder"

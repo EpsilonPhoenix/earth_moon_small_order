@@ -1,0 +1,141 @@
+{
+  "provenance": "local_execution",
+  "python_version": "3.12.13",
+  "checks": [
+    {
+      "name": "arithmetic",
+      "command": [
+        "/home/epsilon/.pyenv/versions/3.12.13/bin/python",
+        "arithmetic_check.py",
+        "--json",
+        "computations/arithmetic_results.json"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.032287995039951056,
+      "stdout": "PASS: critical-edge tables; independent-triple tables; complement partitions;\n      clique allocations; order-15 join patterns; one-unit slack;\n      explicit 65-edge triangle-free obstruction.\n",
+      "stderr": ""
+    },
+    {
+      "name": "verify_dense17_independent",
+      "command": [
+        "/home/epsilon/.pyenv/versions/3.12.13/bin/python",
+        "computations/verify_dense17_independent.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.403310630004853,
+      "stdout": "{'status': 'complete', 'seconds': 0.37918829917907715, 'counts': {'B_encodings': 2388, 'B_encodings_after_filters': 1356, 'degree_edge_feasible': 12, 'feasible_encodings': 3}, 'all_feasible_have_five_cycle_twin_quotient': True, 'all_cones_have_triangle_free_65_edge_obstruction': True}\n",
+      "stderr": ""
+    },
+    {
+      "name": "verify_mtf13_independent",
+      "command": [
+        "/home/epsilon/.pyenv/versions/3.12.13/bin/python",
+        "computations/verify_mtf13_independent.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.4967238020035438,
+      "stdout": "{'status': 'complete', 'seconds': 0.47164011001586914, 'counts': {'B_labeled': 9949, 'B_triangle_free': 5014, 'edge_degree_feasible': 291, 'feasible': 291}, 'all_outputs_match_original_enumeration': True}\n",
+      "stderr": ""
+    },
+    {
+      "name": "verify_B7_catalogue",
+      "command": [
+        "/home/epsilon/.pyenv/versions/3.12.13/bin/python",
+        "computations/verify_B7_catalogue.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.4617337069939822,
+      "stdout": "{'status': 'complete', 'counts_by_complement_edges': [1, 2, 5, 10, 21, 41], 'num_bases': 80, 'all_SAT_bases_covered': True, 'seconds': 0.30560755729675293}\n",
+      "stderr": ""
+    },
+    {
+      "name": "verify_attachment_base_coverage",
+      "command": [
+        "/home/epsilon/.pyenv/versions/3.12.13/bin/python",
+        "computations/verify_attachment_base_coverage.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 0.4995867109973915,
+      "stdout": "{'status': 'complete', 'all_four_bases_7_critical': True, 'all_allowed_zero_or_one_edge_augmentations_covered': True, 'base_multiplicities': {0: 1, 1: 25, 2: 12, 3: 1, 4: 20, 5: 10, 6: 10, 7: 1, 8: 30, 9: 1}, 'seconds': 0.34253358840942383}\n",
+      "stderr": ""
+    },
+    {
+      "name": "verify_sat_independent",
+      "command": [
+        "/home/epsilon/.pyenv/versions/3.12.13/bin/python",
+        "computations/verify_sat_independent.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 13.8021377309924,
+      "stdout": "critical13_K6_results 0 2 0.01\ncritical13_K6_results 1 2 0.011\ncritical13_K6_results 2 2 0.013\ncritical13_K6_results 3 2 0.009\ncritical13_K6_results 4 2 0.009\ncritical13_K6_results 5 2 0.01\ncritical13_K6_results 6 2 0.009\ncritical13_K6_results 7 2 0.008\ncritical13_K6_results 8 2 0.01\ncritical13_K6_results 9 2 0.01\ncritical13_K6_results 10 2 0.011\ncritical13_K6_results 11 2 0.008\ncritical13_K6_results 12 2 0.009\ncritical13_K6_results 13 2 0.009\ncritical13_K6_results 14 2 0.008\ncritical13_K6_results 15 2 0.009\ncritical13_K6_results 16 2 0.011\ncritical13_K6_results 17 2 0.008\ncritical13_K6_results 18 2 0.009\ncritical13_K6_results 19 2 0.008\ncritical13_K6_results 20 2 0.01\ncritical13_K6_results 21 2 0.007\ncritical13_K6_results 22 2 0.009\ncritical13_K6_results 23 2 0.007\ncritical13_K6_results 24 2 0.009\ncritical13_K6_results 25 2 0.007\ncritical13_K6_results 26 2 0.009\ncritical13_K6_results 27 2 0.008\ncritical13_K6_results 28 2 0.008\ncritical13_K6_results 29 2 0.008\ncritical13_K6_results 30 2 0.006\ncritical13_K6_results 31 2 0.007\ncritical13_K6_results 32 2 0.008\ncritical13_K6_results 33 2 0.008\ncritical13_K6_results 34 2 0.007\ncritical13_K6_results 35 2 0.018\ncritical13_K6_results 36 2 0.006\ncritical13_K6_results 37 2 0.007\ncritical13_K6_results 38 2 0.006\ncritical13_K6_results 39 2 0.008\ncritical13_K6_results 40 2 0.007\ncritical13_K6_results 41 2 0.436\ncritical13_K6_results 42 2 0.011\ncritical13_K6_results 43 2 0.119\ncritical13_K6_results 44 2 0.183\ncritical13_K6_results 45 2 0.011\ncritical13_K6_results 46 2 0.01\ncritical13_K6_results 47 2 0.011\ncritical13_K6_results 48 2 0.009\ncritical13_K6_results 49 2 0.011\ncritical13_K6_results 50 2 0.01\ncritical13_K6_results 51 2 0.01\ncritical13_K6_results 52 2 0.009\ncritical13_K6_results 53 2 0.009\ncritical13_K6_results 54 2 0.01\ncritical13_K6_results 55 2 0.009\ncritical13_K6_results 56 2 0.009\ncritical13_K6_results 57 2 0.008\ncritical13_K6_results 58 2 0.01\ncritical13_K6_results 59 2 0.008\ncritical13_K6_results 60 2 0.009\ncritical13_K6_results 61 2 0.007\ncritical13_K6_results 62 2 0.445\ncritical13_K6_results 63 2 0.115\ncritical13_K6_results 64 2 0.412\ncritical13_K6_results 65 2 0.597\ncritical13_K6_results 66 2 0.751\ncritical13_K6_results 67 2 0.579\ncritical13_K6_results 68 2 0.397\ncritical13_K6_results 69 2 0.028\ncritical13_K6_results 70 2 0.222\ncritical13_K6_results 71 2 0.021\ncritical13_K6_results 72 2 0.504\ncritical13_K6_results 73 2 0.384\ncritical13_K6_results 74 2 0.439\ncritical13_K6_results 75 2 0.473\ncritical13_K6_results 76 2 0.444\ncritical13_K6_results 77 2 0.473\ncritical13_K6_results 78 2 0.599\ncritical13_K6_results 79 2 0.354\nattachment_results 0 2 0.397\nattachment_results 1 2 0.383\nattachment_results 2 2 0.314\nattachment_results 3 2 0.71\nattachment_results 4 2 0.655\nattachment_results 5 2 0.66\nattachment_results 6 2 0.267\nattachment_results 7 2 0.725\nattachment_results 8 2 0.484\nattachment_results 9 2 0.275\nVERIFIED 90 independent MILP exclusions 13.42322850227356\n",
+      "stderr": ""
+    },
+    {
+      "name": "exact_smt",
+      "command": [
+        "/home/epsilon/.pyenv/versions/3.12.13/bin/python",
+        "computations/verify_exact_smt.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 12.271180153999012,
+      "stdout": "critical13_K6_results 0: unsat\ncritical13_K6_results 1: unsat\ncritical13_K6_results 2: unsat\ncritical13_K6_results 3: unsat\ncritical13_K6_results 4: unsat\ncritical13_K6_results 5: unsat\ncritical13_K6_results 6: unsat\ncritical13_K6_results 7: unsat\ncritical13_K6_results 8: unsat\ncritical13_K6_results 9: unsat\ncritical13_K6_results 10: unsat\ncritical13_K6_results 11: unsat\ncritical13_K6_results 12: unsat\ncritical13_K6_results 13: unsat\ncritical13_K6_results 14: unsat\ncritical13_K6_results 15: unsat\ncritical13_K6_results 16: unsat\ncritical13_K6_results 17: unsat\ncritical13_K6_results 18: unsat\ncritical13_K6_results 19: unsat\ncritical13_K6_results 20: unsat\ncritical13_K6_results 21: unsat\ncritical13_K6_results 22: unsat\ncritical13_K6_results 23: unsat\ncritical13_K6_results 24: unsat\ncritical13_K6_results 25: unsat\ncritical13_K6_results 26: unsat\ncritical13_K6_results 27: unsat\ncritical13_K6_results 28: unsat\ncritical13_K6_results 29: unsat\ncritical13_K6_results 30: unsat\ncritical13_K6_results 31: unsat\ncritical13_K6_results 32: unsat\ncritical13_K6_results 33: unsat\ncritical13_K6_results 34: unsat\ncritical13_K6_results 35: unsat\ncritical13_K6_results 36: unsat\ncritical13_K6_results 37: unsat\ncritical13_K6_results 38: unsat\ncritical13_K6_results 39: unsat\ncritical13_K6_results 40: unsat\ncritical13_K6_results 41: unsat\ncritical13_K6_results 42: unsat\ncritical13_K6_results 43: unsat\ncritical13_K6_results 44: unsat\ncritical13_K6_results 45: unsat\ncritical13_K6_results 46: unsat\ncritical13_K6_results 47: unsat\ncritical13_K6_results 48: unsat\ncritical13_K6_results 49: unsat\ncritical13_K6_results 50: unsat\ncritical13_K6_results 51: unsat\ncritical13_K6_results 52: unsat\ncritical13_K6_results 53: unsat\ncritical13_K6_results 54: unsat\ncritical13_K6_results 55: unsat\ncritical13_K6_results 56: unsat\ncritical13_K6_results 57: unsat\ncritical13_K6_results 58: unsat\ncritical13_K6_results 59: unsat\ncritical13_K6_results 60: unsat\ncritical13_K6_results 61: unsat\ncritical13_K6_results 62: unsat\ncritical13_K6_results 63: unsat\ncritical13_K6_results 64: unsat\ncritical13_K6_results 65: unsat\ncritical13_K6_results 66: unsat\ncritical13_K6_results 67: unsat\ncritical13_K6_results 68: unsat\ncritical13_K6_results 69: unsat\ncritical13_K6_results 70: unsat\ncritical13_K6_results 71: unsat\ncritical13_K6_results 72: unsat\ncritical13_K6_results 73: unsat\ncritical13_K6_results 74: unsat\ncritical13_K6_results 75: unsat\ncritical13_K6_results 76: unsat\ncritical13_K6_results 77: unsat\ncritical13_K6_results 78: unsat\ncritical13_K6_results 79: unsat\nattachment_results 0: unsat\nattachment_results 1: unsat\nattachment_results 2: unsat\nattachment_results 3: unsat\nattachment_results 4: unsat\nattachment_results 5: unsat\nattachment_results 6: unsat\nattachment_results 7: unsat\nattachment_results 8: unsat\nattachment_results 9: unsat\nPASS: 90 exact-arithmetic SMT exclusions in 11.880s\n",
+      "stderr": ""
+    },
+    {
+      "name": "lean_build_and_axiom_audit",
+      "command": [
+        "/home/epsilon/.pyenv/versions/3.12.13/bin/python",
+        "check_lean.py"
+      ],
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 21.404219045012724,
+      "stdout": "=== lean_version: /usr/bin/lake env lean --version ===\nLean (version 4.34.0, x86_64-unknown-linux-gnu, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)\n=== lake_version: /usr/bin/lake --version ===\nLake version 5.0.0-src+293d5d0 (Lean version 4.34.0)\n=== lean_build: /usr/bin/lake build ===\n\u2139 [2/3] Replayed SmallOrder\ninfo: SmallOrder.lean:635:0: 'EarthMoon.diamond_lists_colorable' depends on axioms: [propext, Classical.choice, Quot.sound]\ninfo: SmallOrder.lean:636:0: 'EarthMoon.dense17_obstruction_triangle_free' depends on axioms: [propext]\ninfo: SmallOrder.lean:637:0: 'EarthMoon.nine_colorable_through18_of_inputs' depends on axioms: [propext, Classical.choice, Quot.sound]\nBuild completed successfully (3 jobs).\n=== lean_source_check: /usr/bin/lake env lean SmallOrder.lean ===\n'EarthMoon.diamond_lists_colorable' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EarthMoon.dense17_obstruction_triangle_free' depends on axioms: [propext]\n'EarthMoon.nine_colorable_through18_of_inputs' depends on axioms: [propext, Classical.choice, Quot.sound]\nPASS: pinned Lean build, direct source check, and three theorem axiom audits.\nThe final theorem remains conditional on its stated inputs.\n",
+      "stderr": ""
+    }
+  ],
+  "package_versions": {
+    "networkx": "3.6.1",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "formalization": "partial; final theorem requires GraphReductionInputs and FiniteCaseInputs",
+  "earlier_user_build_record": "verification/lean-4.34.0-user-build.json",
+  "lean_compilation": "passed",
+  "lean_axiom_audit": "passed",
+  "source_sha256": {
+    "SmallOrder.lean": "b560de802166976ba673e3f31b6079d144b944c7f29783aab047aedab3c5a166",
+    "arithmetic_check.py": "e6868d1af4edbd74c576f5e47f10610d8f65bef476c563d3f55783598500dd27",
+    "check_lean.py": "4b1e1cc9aad630a3da157674417855061e8c58361e38450eac521a3ea99a0835",
+    "check_project.py": "34eb903d02667992c768255aeb5c18364b840db9f5c7d9a00ae80ea5b6a39f97",
+    "computations/verify_B7_catalogue.py": "f7a64113fbec38f0b6bd57d08b8ed8526eff0eacdb1153d53b78b6da6bfa0827",
+    "computations/verify_attachment_base_coverage.py": "8cc4f541e051456bbf3b1d1cef368a63c2f6d878482f7ccbdc2c5d80b1123f3e",
+    "computations/verify_dense17_independent.py": "ddf3d655911f4fc576b90e731fb64a9ff4740e336d53a3bee17bf23d81e74a33",
+    "computations/verify_exact_smt.py": "410115d9292579d1f231e5403a05e0a6e94020cb8839bbdf222a76bbd188082b",
+    "computations/verify_mtf13_independent.py": "e48f48680b9755a111040483d72b187921ed9c0102a7d7b3416eedf4eb1383de",
+    "computations/verify_sat_independent.py": "411c4fe2462550d4a784cb185479abed8e6b0a48fa5b1e144dab8e7c97ff50f3",
+    "lakefile.toml": "5eee05774842a4f01b42247d643718d93fe169cdf6b252114efc0a3a00af0591",
+    "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "test_check_lean.py": "614557b21364b9921186736a7f650a7ff2e63867db9021ef48eac4839424be1e"
+  },
+  "lean_literals": {
+    "status": "passed",
+    "base_edges": [
+      41,
+      41,
+      41,
+      42
+    ],
+    "obstruction_edges": 65,
+    "scope": "literal data and lexical hygiene only; not Lean elaboration"
+  },
+  "lean_report": "lean_verification.json",
+  "external_checks": "passed"
+}

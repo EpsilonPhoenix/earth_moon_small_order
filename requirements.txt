@@ -1,0 +1,5 @@
+# Used only by the external computational verifiers, not by Lean or arithmetic_check.py.
+# Versions used in the included verification run (Python 3.13).
+networkx==3.6.1
+numpy==2.3.5
+scipy==1.17.0

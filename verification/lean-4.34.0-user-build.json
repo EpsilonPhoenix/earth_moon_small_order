@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "provenance": "user_supplied_terminal_output",
+  "scope": "User-confirmed clean Lake build and direct Lean source check; no compilation in the packaging environment.",
+  "toolchain": "leanprover/lean4:v4.34.0",
+  "lean_version": "4.34.0",
+  "lean_commit": "293d5d0c0c3f3dded4688b3ccd6a33939ac5102b",
+  "lean_version_output": "Lean (version 4.34.0, x86_64-unknown-linux-gnu, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)",
+  "lake_version_output": "Lake version 5.0.0-src+293d5d0 (Lean version 4.34.0)",
+  "source_sha256": {
+    "SmallOrder.lean": "b560de802166976ba673e3f31b6079d144b944c7f29783aab047aedab3c5a166",
+    "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "lakefile.toml": "5eee05774842a4f01b42247d643718d93fe169cdf6b252114efc0a3a00af0591"
+  },
+  "source_identification": "Uploaded project with SmallOrder-4.34.0.patch applied; the user reported applying that patch and running the commands below. Hashes are computed here from that matching source, not copied from a user-run hash command.",
+  "commands": [
+    "lake clean",
+    "lake build",
+    "lake env lean SmallOrder.lean"
+  ],
+  "build_summary": "Build completed successfully (3 jobs).",
+  "direct_source_output": "'EarthMoon.diamond_lists_colorable' depends on axioms: [propext, Classical.choice, Quot.sound]\n'EarthMoon.dense17_obstruction_triangle_free' depends on axioms: [propext]\n'EarthMoon.nine_colorable_through18_of_inputs' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "axiom_dependencies": {
+    "EarthMoon.diamond_lists_colorable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EarthMoon.dense17_obstruction_triangle_free": [
+      "propext"
+    ],
+    "EarthMoon.nine_colorable_through18_of_inputs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "sorryAx_in_printed_dependencies": false,
+  "formalization": "partial; final theorem requires GraphReductionInputs and FiniteCaseInputs",
+  "planarity": "abstract PlanarPredicate; no concrete instantiation in this project",
+  "ci_status": "not_observed"
+}
